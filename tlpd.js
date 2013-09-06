@@ -11,24 +11,17 @@ http.get(options, function(res) {
 
 	res.on('data', function (chunk) {
 		body += chunk;
-		/*
-		function find() {
-		    for (var key in chunk) {
-		        if (check.hasOwnProperty(key)) {
-		            var current = paises[key];
-
-		            if (creatureId == 32153) {
-		               console.log("true");
-		            } else { console.log("false"); }
-		        }
-		    }
-		}
-		*/
 	});
 
 	res.on('end', function() {
         var response = JSON.parse(body);
-        console.log("Got response: ", response);
+        //console.log("Got response: ", response);
+
+        response.mounts.collected.forEach(function(entry) {
+        	if(entry.creatureId == 32153) {
+        		console.log("Player has mount: " + entry.name)
+        	}
+        });
     });
 }).on('error', function(e) {
   console.log('ERROR: ' + e.message);
