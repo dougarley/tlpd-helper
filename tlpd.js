@@ -25,6 +25,11 @@ http.get(options, function(res) {
 		}
 		*/
 	});
+
+	res.on('end', function() {
+        var response = JSON.parse(body);
+        console.log("Got response: ", response);
+    });
 }).on('error', function(e) {
   console.log('ERROR: ' + e.message);
 });
