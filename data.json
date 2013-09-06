@@ -1,0 +1,32 @@
+{
+	"characters": [
+		{
+			"charname" : "Zaltana",
+			"charserver" : "the-venture-co"
+		},
+		{
+			"charname" : "Zerowed",
+			"charserver" : "the-venture-co"
+		},
+		{
+			"charname" : "Norvi",
+			"charserver" : "the-venture-co"
+		},
+		{
+			"charname" : "Elarain",
+			"charserver" : "the-venture-co"
+		},
+		{
+			"charname" : "Ponderance",
+			"charserver" : "thunderhorn"
+		},
+		{
+			"charname" : "Beefý",
+			"charserver" : "trollbane"
+		},
+		{
+			"charname" : "Lucinilla",
+			"charserver" : "the-venture-co"
+		}
+	]
+}
