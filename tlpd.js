@@ -7,9 +7,10 @@ var options = {
 http.get(options, function(res) {
 	console.log('STATUS: ' + res.statusCode);
 	console.log('HEADERS: ' + JSON.stringify(res.headers));
+	var body = '';
 
-	res.on('data', function (data) {
-		console.log(JSON.parse(data));
+	res.on('data', function (chunk) {
+		body += chunk;
 		/*
 		function find() {
 		    for (var key in chunk) {
