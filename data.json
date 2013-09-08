@@ -17,6 +17,31 @@
 			"charserver" : "the-venture-co"
 		},
 		{
+			"charname" : "Roksonix",
+			"charserver" : "the-venture-co"
+		},
+		{
+			"charname" : "Siani",
+			"charserver" : "the-venture-co"
+		},
+		{
+			"charname" : "Siani",
+			"charserver" : "the-venture-co"
+		},
+		{
+			"charname" : "Elyssaria",
+			"charserver" : "the-venture-co"
+		},
+
+		{
+			"charname" : "Drákks",
+			"charserver" : "the-venture-co"
+		},
+		{
+			"charname" : "Snowshoe",
+			"charserver" : "the-venture-co"
+		},
+		{
 			"charname" : "Ponderance",
 			"charserver" : "thunderhorn"
 		},
@@ -25,7 +50,7 @@
 			"charserver" : "trollbane"
 		},
 		{
-			"charname" : "Lucinilla",
+			"charname" : "Lucinila",
 			"charserver" : "the-venture-co"
 		}
 	]
