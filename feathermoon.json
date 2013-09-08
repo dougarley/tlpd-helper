@@ -1,0 +1,16 @@
+{
+	"characters": [
+		{
+			"charname" : "Picasso",
+			"charserver" : "shadow-council"
+		},
+		{
+			"charname" : "Palorii",
+			"charserver" : "silver-hand"
+		},
+		{
+			"charname" : "Warzealot",
+			"charserver" : "shadow-council"
+		}
+	]
+}
