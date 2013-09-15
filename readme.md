@@ -27,6 +27,6 @@ You *must* have [node.js](http://nodejs.org) installed to run this script.
 The `data.json` file is in standard JSON format. Each object stored within the `characters` object array includes both a character name & server. Each character name should be entered exactly how it appears in-game, including special characters. Each server name should be entered in all lowercase and with dashes in place of spaces similiar to how they would appear in the armory URL (eg. http://us.battle.net/wow/en/character/the-venture-co/{character}/)
 
 ### Troubleshooting ###
-1. Before attempting to execute the script, please ensure that Node.JS is installed correctly.
+1. Before attempting to execute the script, please ensure that node.js is installed correctly.
 2. If errors persist ensure that the character name & server have been entered correctly.
 3. If errors still persist copy the contents of `data.json` into a JSON linter such as [JSONLint](http://jsonlint.com/) to check for formatting errors.
