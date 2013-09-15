@@ -1,5 +1,5 @@
 body {
-	background: url('../img/tlpd-bg.png') #121212 0 0 no-repeat;
+	background: url('../img/tlpd-bg.png') #121212 0 0 fixed no-repeat;
 	background-size: 100%;
 	color: #eee;
 }
@@ -21,7 +21,7 @@ header#header h1 {
 #main { }
 
 #about, #how-it-works, #how-to {
-	padding: 20px;
+	padding: 0 20px;
 	margin-bottom: 50px;
 	background: #222;
 	border: 1px solid #333;
@@ -37,6 +37,6 @@ header#header h1 {
 	#main { margin-top: 400px; }
 }
 
-@media (min-width: 769px) and (max-width: 1279px;) {
+@media (min-width: 769px) and (max-width: 1279px) {
 	#main { margin-top: 250px; }
 }
