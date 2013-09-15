@@ -6,7 +6,7 @@ This script uses [node.js](http://nodejs.org) to make tracking the Time-Lost Pro
 ## How It Works ##
 Using node.js and the Blizzard WoW API, this script will:
 
-1. Read in a local JSON document containing characters you are tracking and their respective servers.
+1. Open a local JSON document containing characters you are tracking and their respective servers.
 2. Checks each character's activity & collect mounts using the [Blizzard World of Warcraft API](https://github.com/Blizzard/api-wow-docs).
 3. Returns whether the character has recently looted Vyragosa, and when.
 4. Returns whether or not the character has the Time-Lost Protodrake as a collected mount.
@@ -18,13 +18,13 @@ You *must* have [node.js](http://nodejs.org) and [npm](https://npmjs.org/) insta
 
 ## How To ##
 ### Installation & Running the Script ###
-1. Clone the GitHub repo to your computer, and change into the directory where you cloned it.
+1. Clone the GitHub repo to your computer, and navigate to the directory where you cloned the script.
 2. Add the names of characters you'd like to track, and their servers, to the `data.json` document.
 3. Install the dependencies (namely, moment.js) by running `npm install` inside the directory.
-4. Execute the script by navigating to the folder where you have saved the script and typing `./tlpd.js` in the command line or terminal.
-	* Note: By default this will load the data.json document, however you create separate documents to track a separate group of characters, such as characters from specific server pools. You can them pass them to the script as an argument (eg. `node tlpd.js illidan.json`).
-
-You can also install it as a global executable by running `npm link` from inside the directory, and then using `tlpd` from anywhere instead of the command above in step 4 to run it.
+4. Execute the script by navigating to the folder where you have saved the script and typing `node tlpd.js` in the command line or terminal.
+	* By default this will load the data.json document, however you create separate documents to track a separate group of characters, such as characters from specific server pools. You can them pass them to the script as an argument (eg. `node tlpd.js illidan.json`).
+	* Unix based systems can also type `./tlpd.js` into the terminal to execute the script.
+	* Unix based systems may also install the script as a global executable by running `npm link` from inside the directory, and then using `tlpd` from anywhere instead of the command above in step 4.
 
 ### Formatting data.json and other JSON documents ###
 The `data.json` file is in standard JSON format. Each object stored within the `characters` object array includes both a character name & server. Each character name should be entered exactly how it appears in-game, including special characters. Each server name should be entered in all lowercase and with dashes in place of spaces similiar to how they would appear in the armory URL (eg. http://us.battle.net/wow/en/character/the-venture-co/{character}/)
