@@ -24,7 +24,7 @@ You *must* have [Node.JS](http://nodejs.org) installed to run this script.
 	* Note: By default this will load the data.json document, however you create separate documents to track a separate group of characters, such as characters from specific server pools. You can them pass them to the script as an argument (eg. `node tlpd.js illidan.json`).
 
 ### Formatting data.json and other JSON documents ###
-The `data.json` file is in standard JSON format. Each object stored within the object array includes both a character name & server. Each character name should be entered exactly how it appears in-game, including special characters. Each server name should be entered in all lowercase and with dashes in place of spaces similiar to how they would appear in the armory URL (eg. http://us.battle.net/wow/en/character/the-venture-co/{character}/)
+The `data.json` file is in standard JSON format. Each object stored within the `characters` object array includes both a character name & server. Each character name should be entered exactly how it appears in-game, including special characters. Each server name should be entered in all lowercase and with dashes in place of spaces similiar to how they would appear in the armory URL (eg. http://us.battle.net/wow/en/character/the-venture-co/{character}/)
 
 ### Troubleshooting ###
 1. Before attempting to execute the script, please ensure that Node.JS is installed correctly.
