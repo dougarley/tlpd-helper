@@ -5,6 +5,8 @@ var http = require('http');
 var moment = require('moment');
 var linebreak = ('\n========================================\n');
 var loljson;
+var tlpd_id = 32153;
+var vyra_loot = 44732;
 
 fs = require('fs')
 
@@ -38,8 +40,8 @@ fs.readFile(loljson, 'utf8', function (err,data) {
 
             res.on('end', function() {
                 var response = JSON.parse(body);
-                var mntloop = response.mounts.collected;
-                var feedloop = response.feed;
+                var mntloop = response.mounts ? response.mounts.collected : [];
+                var feedloop = response.feed ? response.feed : [];
 
                 console.log(linebreak);
 
@@ -47,16 +49,16 @@ fs.readFile(loljson, 'utf8', function (err,data) {
                 console.log(response.name);     
 
                 // Check to see if character has TLPD
-                for(i=0;i<mntloop.length;i++) {
-                  if(mntloop[i].creatureId == 32153) { console.log("Has Time-Lost Protodrake") }
-                }
+                mntloop.forEach(function(mount) {
+                    if(mount.creatureId == tlpd_id) { console.log("Has Time-Lost Protodrake"); }
+                });
 
                 // Check character activity feed for recent Vyragosa loot
-                for(i=0;i<feedloop.length;i++) {
-                    if(feedloop[i].type ="LOOT" && feedloop[i].itemId == 44732) { 
-                        console.log("Has killed Vyragosa:", moment(feedloop[i].timestamp).format('lll'));
+                feedloop.forEach(function(feed) {
+                    if(feed.type == "LOOT" && feed.itemId == vyra_loot) {
+                        console.log("Has looted Vyragosa:", moment(feed.timestamp).format('lll'));
                     }
-                }
+                });
             });
         }).on('error', function(e) {
             console.log('ERROR: ' + e.message);
