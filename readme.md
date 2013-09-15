@@ -1,20 +1,20 @@
 # Time-Lost Protodrake Helper Script #
 
 ## About ##
-This script uses Node.js to make tracking the Time-Lost Protodrake easier. The script keeps track of the Vyragosa kills of players you add to it, and will also check and see if they have already collected the Time-Lost Protodrake mount.
+This script uses [node.JS](http://nodejs.org) to make tracking the Time-Lost Protodrake easier. The script keeps track of the Vyragosa kills of players you add to it, and will also check and see if they have already collected the Time-Lost Protodrake mount.
 
 ## How It Works ##
-Using Node.JS and the Battle.net this script:
+Using node.js and the Blizzard WoW API this script:
 
-1. Reads a JSON document of stored characters you are tracking and their respective servers.
-2. Checks each character's activity & collect mounts.
+1. Reads a JSON document containing stored characters you are tracking and their respective servers.
+2. Checks each character's activity & collect mounts using the [Blizzard World of Warcraft API](https://github.com/Blizzard/api-wow-docs).
 3. Returns whether the character has recently looted Vyragosa, and when.
 4. Returns whether or not the character has the Time-Lost Protodrake as a collected mount.
 
 **Note:** This script *can not* track Vyragosa kills that are not looted. Additionally, since looting the Reigns of the Time-Lost Protodrake does not appear in the character's activity feed, the script *can not* accurately predict when the Time-Lost Protodrake itself was killed.
 
 ## Requirements ##
-You *must* have [Node.JS](http://nodejs.org) installed to run this script.
+You *must* have [node.JS](http://nodejs.org) installed to run this script.
 
 ## How To ##
 ### Installation & Running the Script ###
