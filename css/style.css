@@ -20,7 +20,7 @@ header#header h1 {
 
 #main { }
 
-#about, #how-it-works, #how-to {
+#about, #how-it-works, #requirements, #how-to {
 	padding: 0 20px;
 	margin-bottom: 50px;
 	background: #222;
