@@ -1,0 +1,21 @@
+{
+	"name": "tlpd",
+	"version": "1.0.0",
+	"author": "Doug 'Ramaniscence' Arley <sgtrama@gmail.com>",
+	"description" : "",
+	"contributors": [
+		"Doug 'Ramaniscence' Arley <sgtrama@gmail.com>",
+		"Mark 'fusion2004' Oleson <fusion2004@gmail.com>"
+	],
+	"bin": {
+		"tlpd": "./tlpd.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/dougarley/tlpd-stuff.git"
+	},
+	"dependencies": {
+		"moment": "2.2.x"
+	},
+	"license": "MIT"
+}
