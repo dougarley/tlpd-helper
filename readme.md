@@ -5,6 +5,7 @@ This script uses Node.js to make tracking the Time-Lost Protodrake easier. The s
 
 ## How It Works ##
 Using Node.JS and the Battle.net this script:
+
 1. Reads a JSON document of stored characters you are tracking and their respective servers.
 2. Checks each characters' activity & collect mounts.
 3. Returns whether the character has recently looted Vyragosa, and when.
@@ -18,5 +19,5 @@ You *must* have [Node.JS](http://nodejs.org) installed to run this script.
 ## How To ##
 1. Clone the GitHub repo to your deskstop.
 2. Add the names of characters you'd like to track, and their servers, to the `data.json` document.
-2. Execute the script by navigating to the folder where you have saved the script and typing `node tlpd-stuff.js` in the command line or terminal.
+3. Execute the script by navigating to the folder where you have saved the script and typing `node tlpd-stuff.js` in the command line or terminal.
 	* Note: By default this will load the data.json document, however you create separate documents to track different folders. You can them pass them to the script as an argument (eg. `node tlpd-stuff.js illidan.json`).
