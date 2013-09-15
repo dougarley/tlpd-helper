@@ -20,7 +20,7 @@ header#header h1 {
 
 #main { }
 
-#about, #how-to {
+#about, #how-it-works, #how-to {
 	padding: 20px;
 	margin-bottom: 50px;
 	background: #222;
@@ -35,4 +35,8 @@ header#header h1 {
 
 @media (min-width: 1280px) {
 	#main { margin-top: 400px; }
+}
+
+@media (min-width: 769px) and (max-width: 1279px;) {
+	#main { margin-top: 250px; }
 }
