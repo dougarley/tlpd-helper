@@ -25,7 +25,6 @@
 
 	    	<!-- Right Nav Section -->
 	    	<ul class="right">
-	      		<li class=""><a href="#">Main Item 4</a></li>
 	      		<li class="divider show-for-small"></li>
 	      		<li class="has-form">
 	        		<a class="button" href="#">Button!</a>
@@ -38,9 +37,23 @@
 </header>
 
 <section id="main" class="row">
-	<div class="about large-12 large-centered">
+	<div id="about" class="large-12 large-centered">
 		<header><h2>About</h2></header>
 		<p>This script uses Node.js to make tracking the Time-Lost Protodrake easier. The script keeps track of the Vyragosa kills of players you add to it, and will also check and see if they have already collected the Time-Lost Protodrake mount.</p>
+	</div>
+
+	<div id="how-it-works" class="large-12 large-centered">
+		<header><h2>How It Works</h2></header>
+		<p>Using Node.JS and the Battle.net this script:</p>
+
+		<ul>
+			<li>Reads a JSON document of stored characters you are tracking and their respective servers.</li>
+			<li>Checks each character's activity & collect mounts using the Battle.net API</li>
+			<li>Returns whether the character has recently looted Vyragosa, and when.</li>
+			<li>Returns whether or not the character has the Time-Lost Protodrake as a collected mount.</li>
+		</ul>
+
+		<p><strong>Note</strong>: This script <em>can not</e> track Vyragosa kills that are not looted. Additionally, since looting the Reigns of the Time-Lost Protodrake does not appear in the character's activity feed, the script <em>can not</em> accurately predict when the Time-Lost Protodrake itself was killed.</p>
 	</div>
 
 
