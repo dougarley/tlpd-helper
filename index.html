@@ -37,12 +37,12 @@
 </header>
 
 <section id="main" class="row">
-	<div id="about" class="large-12 large-centered">
+	<section id="about" class="large-12 large-centered">
 		<header><h2>About</h2></header>
 		<p>This script uses <a href="http://nodejs.org/">node.js</a> to make tracking the Time-Lost Protodrake easier. The script keeps track of the Vyragosa kills of players you add to it, and will also check and see if they have already collected the Time-Lost Protodrake mount.</p>
-	</div>
+	</section>
 
-	<div id="how-it-works" class="large-12 large-centered">
+	<section id="how-it-works" class="large-12 large-centered">
 		<header><h2>How It Works</h2></header>
 		<p>Using node.js and the Battle.net this script:</p>
 
@@ -55,6 +55,45 @@
 
 		<p><strong>Note</strong>: This script <em>can not</em> track Vyragosa kills that are not looted. Additionally, since looting the Reigns of the Time-Lost Protodrake does not appear in the character's activity feed, the script <em>can not</em> accurately predict when the Time-Lost Protodrake itself was killed.</p>
 	</div>
+
+	<section id="requirements" class="large-12 large-centered">
+		<header><h2>Requirements</h2></header>
+
+	</section>
+
+	<section id="how-to">
+		<section id="installation">
+			<header><h3>Installation &amp; Running the Script</h3></header>
+			<ol>
+				<li>Clone the GitHub repo to your computer, and navigate to the directory where you cloned the script.</li>
+				<li>Add the names of characters you'd like to track, and their servers, to the `data.json` document.</li>
+				<li>Install the dependencies (namely, moment.js) by running `npm install` inside the directory.</li>
+				<li>Execute the script by navigating to the folder where you have saved the script and typing `node tlpd.js` in the command line or terminal.
+					<ul>
+						<li>By default this will load the data.json document, however you create separate documents to track a separate group of characters, such as characters from specific server pools. You can them pass them to the script as an argument (eg. `node tlpd.js illidan.json`).</li>
+						<li>Unix based systems can also type `./tlpd.js` into the terminal to execute the script.</li>
+						<li>Unix based systems may also install the script as a global executable by running `npm link` from inside the directory, and then using `tlpd` from anywhere instead of the command above in step 4.</li>
+					</ul>
+				</li>
+			</ol>
+		</section>
+
+		<section id="formatting">
+			<header><h3>Formatting data.json &amp; other JSON documents</h3></header>
+
+			<p>The data.json file is in standard JSON format. Each object stored within the characters object array includes both a character name &amp; server. Each character name should be entered exactly how it appears in-game, including special characters. Each server name should be entered in all lowercase and with dashes in place of spaces similiar to how they would appear in the armory URL (eg. http://us.battle.net/wow/en/character/the-venture-co/{character}/)</p>
+		</section>
+
+		<section id="troubleshooting">
+			<ol>
+				<li>Before attempting to execute the script, please ensure that node.js and npm are installed correctly.</li>
+				<li>If errors persist ensure that the character name &amp; server have been entered correctly.</li>
+				<li>If errors still persist copy the contents of data.json into a JSON linter such as JSONLint to check for formatting errors.</li>
+			</ol>
+		</section>
+	</section>
+
+
 
 
 </section>
