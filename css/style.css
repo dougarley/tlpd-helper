@@ -17,6 +17,7 @@ nav.top-bar {
 
 header#header { 
 	text-align: center;
+	padding-top: 275px;
 }
 
 header#header h1 { 
@@ -24,7 +25,7 @@ header#header h1 {
 	text-shadow: 0 2px 5px rgba(0,0,0,0.75);
 }
 
-#main { }
+#main { margin-top: 20px; }
 
 #about, #how-it-works, #requirements, #how-to {
 	padding: 0 20px;
@@ -40,9 +41,13 @@ header#header h1 {
 }
 
 @media (min-width: 1280px) {
-	#main { margin-top: 400px; }
+	header#header { padding-top: 275px; }
 }
 
-@media (min-width: 769px) and (max-width: 1279px) {
-	#main { margin-top: 250px; }
+@media (min-width: 950px) and (max-width: 1279px) {
+	header#header { padding-top: 200px; }
+}
+
+@media (max-width: 949px) { 
+	header#header { padding-top: 150px; }
 }
