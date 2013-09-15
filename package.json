@@ -17,5 +17,8 @@
 	"dependencies": {
 		"moment": "2.2.x"
 	},
-	"license": "MIT"
+	"license": "MIT",
+	"engines": {
+        "node": "*"
+    }
 }
