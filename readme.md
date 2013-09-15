@@ -7,7 +7,7 @@ This script uses Node.js to make tracking the Time-Lost Protodrake easier. The s
 Using Node.JS and the Battle.net this script:
 
 1. Reads a JSON document of stored characters you are tracking and their respective servers.
-2. Checks each characters' activity & collect mounts.
+2. Checks each character's activity & collect mounts.
 3. Returns whether the character has recently looted Vyragosa, and when.
 4. Returns whether or not the character has the Time-Lost Protodrake as a collected mount.
 
@@ -24,4 +24,9 @@ You *must* have [Node.JS](http://nodejs.org) installed to run this script.
 	* Note: By default this will load the data.json document, however you create separate documents to track different folders. You can them pass them to the script as an argument (eg. `node tlpd-stuff.js illidan.json`).
 
 ### Formatting data.json and other JSON documents ###
-The `data.json` file is in standard JSON format. Each object stored within the object array includes both a character name & server. Each character name should be entered exactly how it appears in-game, including special characters. Each server name should be entered in all lowercase and with dashes in place of spaces similiar to how they would appear in the armory URL (eg. http://us.battle.net/wow/en/character/**the-venture-co**/{character}/)
+The `data.json` file is in standard JSON format. Each object stored within the object array includes both a character name & server. Each character name should be entered exactly how it appears in-game, including special characters. Each server name should be entered in all lowercase and with dashes in place of spaces similiar to how they would appear in the armory URL (eg. http://us.battle.net/wow/en/character/the-venture-co/{character}/)
+
+### Troubleshoot ###
+1. Before attempting to execute the script, please ensure that Node.JS is installed.
+2. If errors persist ensure that the character name & server have been entered correctly.
+3. If errors still persist copy the contents of `data.json` into a JSON linter such as [JSONLint](http://jsonlint.com/) to check for formatting errors.
