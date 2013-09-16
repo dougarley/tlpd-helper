@@ -73,7 +73,8 @@ header#header h1 {
 	border-top-left-radius: 5px;
 	border-top-right-radius: 5px;
 	text-align: center;
-	margin: 0 2px;
+	margin: 0 2px; padding: 3px 0;
+	font-weight: bold;
 }
 
 .code-window section {
@@ -81,6 +82,8 @@ header#header h1 {
 	border-right: 2px solid #ddd;
 	border-bottom: 2px solid #ddd;
 	background: #171717;
+	padding: 20px; 
+	font-family: monospace;
 }
 
 @media (min-width: 1280px) {
