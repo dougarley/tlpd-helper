@@ -32,6 +32,8 @@ header#header h1 {
 
 .download {
 	height: 30px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
 	border-radius: 5px;
 	text-shadow: 0 -1px 1px rgba(0,0,0,0.75);
 }
