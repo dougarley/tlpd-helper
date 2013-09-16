@@ -66,10 +66,17 @@ header#header h1 {
 	margin: 20px;
 }
 
-.code-window header {
+.code-window > header {
 	color: #222;
 	text-shadow: 0 1px 1px rgba(255,255,255,0.75);
-	background: #ddd;
+	background: #efefef; /* Old browsers */
+	background: -moz-linear-gradient(top,  #efefef 2%, #dddddd 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(2%,#efefef), color-stop(100%,#dddddd)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #efefef 2%,#dddddd 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #efefef 2%,#dddddd 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #efefef 2%,#dddddd 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #efefef 2%,#dddddd 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#efefef', endColorstr='#dddddd',GradientType=0 ); /* IE6-9 */
 	border-top-left-radius: 5px;
 	border-top-right-radius: 5px;
 	text-align: center;
@@ -77,12 +84,13 @@ header#header h1 {
 	font-weight: bold;
 }
 
-.code-window section {
+.code-window > section {
 	border-left: 2px solid #ddd;
 	border-right: 2px solid #ddd;
 	border-bottom: 2px solid #ddd;
 	background: #171717;
-	padding: 20px; 
+	padding: 20px;
+	margin: 0 2px;
 	font-family: monospace;
 }
 
