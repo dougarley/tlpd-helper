@@ -36,8 +36,6 @@ header#header h1 {
 	-moz-border-radius: 5px;
 	border-radius: 5px;
 	text-shadow: 0 -1px 1px rgba(0,0,0,0.75);
-	position: relative;
-	top: -1px;
 }
 
 #about, #how-it-works, #requirements, #how-to {
