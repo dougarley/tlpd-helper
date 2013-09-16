@@ -30,6 +30,12 @@ header#header h1 {
 
 #main { margin-top: 20px; }
 
+.download {
+	height: 30px;
+	border-radius: 5px;
+	text-shadow: 0 -1px 1px rgba(0,0,0,0.75);
+}
+
 #about, #how-it-works, #requirements, #how-to {
 	padding: 0 20px;
 	margin-bottom: 50px;
