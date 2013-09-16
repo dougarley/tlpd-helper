@@ -51,6 +51,30 @@ header#header h1 {
 	box-shadow: 0 0 5px rgba(0,0,0,0.25);
 }
 
+.code {
+	display: inline-block;
+	background: #444;
+	padding: 0 2px;
+	border: 1px solid #666;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	font-family: monospace;
+}
+
+.code-window {
+	margin: 20px;
+}
+
+.code-window header {
+	color: #222;
+	text-shadow: 0 1px 1px rgba(255,255,255,0.75);
+	background: #ddd;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	text-align: center;
+}
+
 @media (min-width: 1280px) {
 	header#header { padding-top: 275px; }
 }
