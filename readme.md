@@ -3,6 +3,8 @@
 ## About ##
 This script uses [node.js](http://nodejs.org) to make tracking the Time-Lost Proto-Drake easier. The script keeps track of the Vyragosa kills of players you add to it, and will also check and see if they have already collected the Time-Lost Proto-Drake mount.
 
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/dougarley/tlpd-helper/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
 ## How It Works ##
 Using node.js and the Blizzard WoW API, this script will:
 
